@@ -1,0 +1,75 @@
+.homeLeft{
+  position: relative;
+  box-sizing: border-box;
+  width: 600px;
+  background-color: red;
+  transition: 0.4s;
+  .btn{
+    left:600px;
+    transform:translateX(-50%);
+    transition: 0.4s;
+    &::before{
+      transform: rotateZ(45deg);
+    }
+    &::after{
+      transform: rotateZ(-45deg);
+    }
+  }
+}
+.homeLeftCollapse{
+  width:300px;
+  .btn{
+    left:300px;
+    top:50%;
+    transform:translateX(-50%);
+    transition: 0.4s;
+    &::before{
+      transform: rotateZ(-45deg);
+    }
+    &::after{
+      transform: rotateZ(45deg);
+    }
+  }
+}
+.btn{
+  position: fixed;
+  top:50%;
+  width:50px;
+  height:50px;
+  background-color: saddlebrown;
+  border-radius:50%;
+  transform:translateX(-50%);
+  transition: 0.4s;
+  &::before, &::after{
+    position: absolute;
+    content:'';
+    display: block;
+    width:6px;
+    height:20px;
+    transition: 0.4s;
+    border-radius:4px;
+    background-color: aqua;
+    left:50%;
+    transform: translateX(-3px);
+    transform-origin: center;
+  }
+  &::before{
+    top:10px;
+  }
+  &::after{
+    bottom:10px;
+  }
+}
+
+.login{
+  width:80%;
+  height:200px;
+  background-color: aliceblue;
+  margin:auto;
+}
+.some{
+  width:200px;
+  height:200px;
+  margin:20px auto 0;
+  background-color:#f60;
+}
