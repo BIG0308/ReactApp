@@ -3,3 +3,35 @@
   height:100%;
   overflow-y:scroll;
 }
+.rightShow{
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  width:100%;
+  padding:10px;
+  background-color: #7c2929;
+  &::after{
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+.banner{
+  width:300px;
+  height:300px;
+  background-color: palegreen;
+ .ant-carousel{
+   height:100%;
+   .slick-slider{
+     height:100%;
+   }
+ }
+}
+.image{
+  flex-grow: 1;
+  height:300px;
+  text-align: center;
+  img{
+    margin:auto;
+  }
+}
