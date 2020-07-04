@@ -3,9 +3,28 @@
   box-sizing: border-box;
   width: 600px;
   height:100%;
-  overflow-y:hidden;
+  overflow-y:scroll;
   background-color: red;
   transition: 0.4s;
+  &{
+    scrollbar-face-color: red;
+  }
+  &::-webkit-scrollbar{
+    width:10px;
+    background-color: rgba(0,0,0,0.5);
+  }
+  &::-webkit-scrollbar-track{
+    border-radius:50%;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  &::-webkit-scrollbar-button {
+    background-color: #7c2929;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: black;
+  }
   .btn{
     left:600px;
     transform:translateX(-50%);
