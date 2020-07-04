@@ -6,6 +6,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import App from './App';
 import "normalize.css";
 import "antd/dist/antd.css";
+import "./index.css";
 
 import * as serviceWorker from './serviceWorker';
 

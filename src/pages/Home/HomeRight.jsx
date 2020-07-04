@@ -7,7 +7,7 @@ class HomeRight extends Component {
     render() {
         return (
             <div className={'homeRight'}>
-                <div className={'banner'}>
+                <div className={'banner'} style={{height:2000}}>
 
                 </div>
             </div>
