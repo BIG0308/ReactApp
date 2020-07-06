@@ -1,3 +1,30 @@
+/*
+  开发者：樊进德
+  日期：  2020/07/06
+  内容： home页 基本 布局 --start
+*/
+.home{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: relative;
+  height:100%;
+  .homeRight{
+    flex-grow:1;
+    background-color: aqua;
+  }
+}
+/*
+  开发者：樊进德
+  日期：  2020/07/06
+  内容： home页 基本 布局 --end
+*/
+
+/*
+  开发者：樊进德
+  日期：  2020/07/06
+  内容： home页 左侧 布局 --start
+*/
 .homeLeft{
   position: relative;
   box-sizing: border-box;
@@ -6,9 +33,14 @@
   overflow-y:scroll;
   background-color: red;
   transition: 0.4s;
+
+  // 滚动条样式   ie11 --start
   &{
     scrollbar-face-color: red;
   }
+  // 滚动条样式   ie11 --end
+
+  // 高级浏览器滚动条样式 --start
   &::-webkit-scrollbar{
     width:10px;
     background-color: rgba(0,0,0,0.5);
@@ -25,6 +57,9 @@
   &::-webkit-scrollbar-corner {
     background-color: black;
   }
+  // 高级浏览器滚动条样式 --end
+
+  // 调整布局按钮  --start
   .btn{
     left:600px;
     transform:translateX(-50%);
@@ -36,6 +71,7 @@
       transform: rotateZ(-45deg);
     }
   }
+  //
 }
 .homeLeftCollapse{
   width:300px;
@@ -81,7 +117,6 @@
     bottom:10px;
   }
 }
-
 .login{
   width:80%;
   height:200px;
@@ -94,3 +129,59 @@
   margin:20px auto 0;
   background-color:#f60;
 }
+/*
+  开发者：樊进德
+  日期：  2020/07/06
+  内容： home页 左侧 布局 --end
+*/
+
+/*
+  开发者：樊进德
+  日期：  2020/07/06
+  内容： home页 右侧 布局 --start
+*/
+.homeRight{
+  transition: 0.4s;
+  height:100%;
+  overflow-y:scroll;
+}
+.rightShow{
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  width:100%;
+  padding:10px;
+  background-color: #7c2929;
+  &::after{
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+.banner{
+  width:300px;
+  height:300px;
+  background-color: palegreen;
+  .ant-carousel{
+    height:100%;
+    .slick-slider{
+      height:100%;
+    }
+  }
+}
+.image{
+  flex-grow: 1;
+  height:300px;
+  text-align: center;
+  img{
+    margin:auto;
+  }
+}
+.dynamic{
+  height:300px;
+}
+/*
+  开发者：樊进德
+  日期：  2020/07/06
+  内容： home页 右侧 布局 --end
+*/

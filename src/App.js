@@ -1,7 +1,12 @@
+/*
+* 作者：樊进德
+* 日期：2020/06/07
+* 内容：App路由的策略
+* */
 import React from 'react';
 import './App.css';
 // import AutoNav from "./components/AutoNav/AutoNav";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import {Switch, Route} from 'react-router-dom';
 
 function App() {
