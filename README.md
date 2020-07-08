@@ -66,3 +66,27 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Antd Design 
+
+Tabs->tabpanel->renderTabBar
+
+> `(props,DefaultTabBar)=>{}`
+>
+> props属性
+>
+> activeKey：当前激活的面板key
+>
+> animated: 动画
+>
+> editable
+>
+> extra:额外`React.Component`
+>
+> id,locale,mobile,moreIcon,
+>
+> onTabClick,onTableScroll
+>
+> panes:所有的子pane
+>
+> pane:`key props.children   props.tab `
